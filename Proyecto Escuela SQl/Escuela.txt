@@ -1,0 +1,39 @@
+create database EscuelaArcaDelPacto;
+
+create TABLE Alumnos(
+id int,
+Nombre varchar(20),
+Apellido varchar(20),
+tipoSangre varchar(2),
+profesor varchar (20),
+curso varchar(10),
+);
+
+CREATE TABLE Profesor(
+id int,
+Nombre varchar(20),
+Apellido varchar(20),
+tipoSangre varchar(2),
+Materia varchar(20),
+horario varchar(7),
+);
+
+CREATE TABLE Materia(
+id int,
+NombreAsignatura varchar(20),
+Profesor varchar(20),
+horario varchar(7),
+);
+
+CREATE TABLE Grado(
+id int,
+curso varchar(10),
+Profesor varchar(40),
+NumEstudiante int(40),
+);
+
+CREATE TABLE Tutor(
+id int,
+Tutor varchar(20),
+Alumno varchar(20),
+);
